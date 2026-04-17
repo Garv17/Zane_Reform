@@ -29,8 +29,9 @@ RUN pip install --no-cache-dir --upgrade pip \
 # Copy application code
 COPY app/ ./app/
 COPY temp_lineage_data/ ./temp_lineage_data/
-COPY chroma_db_setup.ipynb ./
-COPY .env ./
+COPY scripts/ ./scripts/
+#COPY chroma_db_setup.ipynb ./
+# COPY .env ./
 
 # Create directories that might be needed
 RUN mkdir -p /app/chroma_collection_setup
