@@ -30,6 +30,7 @@ RUN pip install --no-cache-dir --upgrade pip \
 COPY app/ ./app/
 COPY temp_lineage_data/ ./temp_lineage_data/
 COPY chroma_db_setup.ipynb ./
+COPY scripts/ ./scripts/
 # COPY .env ./
 
 # Create directories that might be needed
